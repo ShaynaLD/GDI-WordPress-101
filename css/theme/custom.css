@@ -4,3 +4,8 @@
 .left-align{
 	text-align: left;
 }
+
+.reveal h3,
+.reveal h4{
+	font-family: "Gotham-Book","Helvetica",Arial,sans-serif;
+}
