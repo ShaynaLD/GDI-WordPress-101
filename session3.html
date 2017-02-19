@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Girl Develop It - Intro to WordPress</title>
+
+		<meta name="description" content="Girl Develop It framework for easily creating beautiful presentations using HTML in GDI theme. Forked from Hakim El Hattab's reveal.js">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/gdilight.css" id="theme">
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<!-- added by Shayna -->
+		<link rel="stylesheet" href="css/theme/custom.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section id="beginning-slide">
+					<img src="img/circle-gdi-logo.png" class="no-border" width="200px"/>
+					<h2>Intro to WordPress</h2>
+					<h3>Session Two</h3>
+					<p>
+						<small>With Shayna Diamond</small>
+					</p>
+					<p>
+						<small><a href="https://twitter.com/whosyourwebsite" target="_blank">@whosyourwebsite</a> &#8226; 
+						<a href="mailto:mailto:shaynalernerdiamond@gmail.com">shaynalernerdiamond@gmail.com</a> &#8226; 
+						<a href="https://www.whosyourwebsite.com" target="_blank">www.whosyourwebsite.com</a><br/><br/>
+						With thanks to <a href="http://thetracyl.com/">Tracy Levesque</a> From whom these slides were forked.</small>
+					</p>
+					
+					
+				</section>
+				
+				<section>
+					<h2>Welcome back!</h2>
+					<h3>Today you will will</h3>
+					<ul>
+						<li>Add functionality with plugins</li>
+						<li>Learn about the remaining admin menu items</li>
+						<li>Learn about Themes and how to find, install, preview and activate them</li>
+						<li>Learn about further options for customizing WordPress</li>
+					</ul>
+				</section>
+
+<!--Plugins-->
+				<section>
+					<h2>Plugins</h2>
+					<h3>Recap</h3>
+						<ul>
+							<li>Plugins add functionality to WordPress</li>
+							<li>There are tens of thousands of free plugins in the <a href="http://wordpress.org/plugins/" target="_blank">WordPress Plugin Directory</a></li>
+							<li>There are also many paid 'Premium' or 'Pro' plugins</li>
+							<li>Plugins are installed 2 ways (What are they?)</li>
+						</ul>
+				</section>
+
+				<section>
+					<h2>Plugins</h2>
+					<h3>Shortcodes</h3>
+					<p>
+						Plugins often use <a href="http://codex.wordpress.org/Shortcode" target="_blank">shortcodes</a> to add content to a page or post.
+					</p>
+					<p>
+						For example, the plugin <a href="http://wordpress.org/plugins/contact-form-7/" target="_blank">Contact Form 7</a> uses the shortcode <code>[contact-form-7 id="105"]</code> (the ID is the ID of the form) to insert the form on a page or post. 
+					</p>
+					
+				</section>
+				
+				<section>
+					<h2>Top Free Plugins</h2>
+					<h3>Favorite Free plugins</h3>
+					<ul>
+						<li><strong><a href="http://wordpress.org/plugins/wordpress-seo/" target="_blank">WordPress SEO by Yoast:</a></strong> SEO plugin for WordPress </li>
+						<li><strong><a href="http://wordpress.org/plugins/contact-form-7/" target="_blank">Contact Form 7:</a></strong> Used to make simple contact forms </li>
+						<li><strong><a href="http://wordpress.org/plugins/woocommerce/" target="_blank">WooCommerce:</a></strong> Ecommerce plugin</li>
+						<li><strong><a href="http://wordpress.org/plugins/sucuri-scanner/" target="_blank">Sucuri Free:</a></strong> Malware scanning and 1-click hardening</li>
+						<li><strong><a href="https://wordpress.org/plugins/better-wp-security/" target="_blank">iThemes Security Free</a></strong> Malware scanning and 1-click hardening</li>
+						<li><strong><a href="https://wordpress.org/plugins/duplicate-post/" target="_blank">Duplicate Post</a></strong> Duplicates posts & pages</li>						
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Top Premium Plugins</h2>
+					<h3>Favorite For-pay plugins</h3>
+					<ul>
+						<li><strong><a href="http://www.gravityforms.com/" target="_blank">Gravity Forms:</a></strong> A very powerful and feature-rich forms builder</li>
+						<li><strong><a href="http://ithemes.com/purchase/backupbuddy/" target="_blank">Backup Buddy:</a></strong> Easily backup, restore and migrate a WordPress site</li>
+					</ul>
+				</section>
+<!--Plugin Shortcodes-->
+				<section>
+					<h2>Plugins</h2>
+					<h3>Shortcode Tips</h3>
+					<ul>
+						<li>Shortcodes can be used in the Visial or Text editor!</li>
+						<li>Many (but not all) Shorcodes can be used in the text widget!</li>
+					</ul>
+				</section>				
+				<section>
+					<h2>Plugins</h2>
+					<h3>Security tip - Vet plugins first</h3>
+					<ul>
+						<li><strong>Ratings</strong> Read the plugin reviews</li>
+						<li><strong>Maintenance</strong> Check to see it the plugin has regular updates</li>
+						<li><strong>Support</strong> See if the plugin developers regularly answer support questions</li>
+					</ul>
+				</section>
+
+<!--Develop it-->
+				<section>
+					<h2>Let's develop it!</h2>
+					<h3>Using Plugins</h3>
+
+					<ul>
+						<li>Search for plugins via Plugins > Add New and try some</li>
+						<li>Browse the <a href="http://wordpress.org/plugins/" target="_blank">WordPress Plugins Directory</a>, download one and install it using the "upload" link</li>
+						<li>Activate the plugin and use a shortcode to (pick one):
+						<ul>
+							<li>Add a contact form</li>
+							<li>Insert google maps</li>
+							<li>Add a Social Media feed</li>
+						</ul>
+					</ul>
+					<p>
+						<a href="http://e.ggtimer.com/15minutes" target="_blank"><strong>15 minutes</strong></a>
+					</p>
+				</section>
+
+<!--Menus-->	
+				<section>
+					<h2>Managing Menus</h2>
+					<h3>Appearance > Menus</h3>
+					
+					<p>
+						Easily create and manage navigation menus
+					</p>
+
+					<ul>
+						<li><strong>Create menus:</strong> Enter a menu name and click "Create Menu"</li>
+						<li><strong>Add pages:</strong> Add existing pages, custom links or category pages</li>
+						<li><strong>Order Pages:</strong> Drag and drop your pages menu items in the desired order. Indent pages to make them children of other pages</li>
+						<li><strong>Assign Menu to Theme location:</strong> When the menu is ready, assign it to a theme location and click "Save Menu."</li>
+						<li><strong>Manage Locations Tab:</strong> Assign menus to theme locations</li>
+					</ul>
+					<strong>NOTE: Menu support varies by theme</strong>
+				</section>
+				
+				<section>
+					<h2>Managing Menus</h2>
+					<h3>The Customizer</h3>
+					
+					<p>
+						Manage your menus AND pages at the same time.
+					</p>
+				</section>
+<!--Develop it-->
+				<section>
+					<h2>Let's develop it!</h2>
+					<h3>Pages and Menus</h3>
+
+					<ul>
+						<li>Create the pages you want on your site</li>
+						<li>Add and organize your menu</li>
+						<li>Choose your home and Posts pages (Where is that?)</li>
+					</ul>
+					<p>
+						<a href="http://e.ggtimer.com/10minutes" target="_blank"><strong>10 minutes</strong></a>
+					</p>
+
+				</section>
+
+
+
+<!--Comments-->
+				<section>
+					<h2>Managing Comments</h2>
+					<h3>The Comments menu</h3>
+
+					<p>
+						View, approve, delete and mark comments as spam.
+					</p>
+				</section>
+<!--Media-->
+				<section>
+					<h2>Managing Media</h2>
+					<h3>The Media menu</h3>
+
+					<p>
+						View all files that have been uploaded to the site via the content editor. Add, edit and delete files.
+					</p>
+				</section>
+<!--users-->
+				<section>
+					<h2>Managing Users</h2>
+					<h3>The Users menu</h3>
+
+					<ul>
+						<li><strong>Manage existing users:</strong> Edit all user data or delete users</li>
+						<li><strong>Add new users:</strong> Assign new users to site</li>
+						<li><strong>Your Profile:</strong> Edit your own profile settings</li>
+					</ul>
+				</section>	
+				
+				<section>
+					<h2>Managing Users</h2>
+					<h3>Default User roles</h3>
+					
+					<p>
+						Users can be given <a href="http://codex.wordpress.org/Roles_and_Capabilities" target="_blank">certain levels of editing privileges</a>. 
+					</p>
+
+					<ul>
+						<li><strong>Administrator:</strong> access to all the administration features within a single site</li>
+						<li><strong>Editor:</strong> ability to publish and manage posts including the posts of other users</li>
+						<li><strong>Author:</strong> ability to publish and manage their own posts</li>
+						<li><strong>Contributor:</strong> ability to write and manage their own posts but cannot publish them</li>
+						<li><strong>Subscriber:</strong> ability to only manage their profile</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Managing Users</h2>
+					<h3>Custom Roles</h3>
+					
+					<ul>
+						<li>You can change the capabilities of default roles and create new roles via plugins (i.e. <a href="https://wordpress.org/plugins/user-role-editor/" target="_black">User Role Manager</a>) </li>
+						<li>Or by adding functions to the functions.php file of your theme:</li>
+						<ul>
+							<li> <a href="https://codex.wordpress.org/Function_Reference/add_role" target="_blank">Add Role</a></li>
+							<li> <a href="https://codex.wordpress.org/Function_Reference/add_cap" target="_blank">Add Capabilities</a></li>
+						</ul>
+					</ul>
+				</section>	
+<!--Develop it-->
+				<section>
+					<h2>Let's develop it!</h2>
+					<h3>try one of these</h3>
+
+					<ul>
+						<li>Approve or delete a comment</li>
+						<li>Upload an image to the Library amd edit it</li>
+						<li>Add a user with a different role and log in as them (in another browser)</li>
+					</ul>
+				</section>
+<!--Themes-->				
+				<section>
+					<h2>What are Themes?</h2>
+					<h3>Official description from WordPress.org</h3>
+					<blockquote>
+						Fundamentally, the WordPress Theme system is a way to 'skin' your weblog. Yet, it is more than just a 'skin.' Skinning your site implies that only the design is changed. WordPress Themes can provide much more control over the look and <em>presentation</em> of the material on your website.
+					</blockquote>
+				</section>
+				
+				<section>
+					<h2>Themes are</h2>
+					<h3>Powerful</h3>
+					<p>
+						A theme not only determines how a site looks, it can also add functionality. There are themes that can turn a WordPress site into an online store, an art portfolio and more.
+					</p>
+				</section>
+				
+				<section>
+					<h2>Themes are</h2>
+					<h3>Often Free</h3>
+					<p>
+						Right now there are over 2,406 free themes in the official <a href="http://wordpress.org/themes/" target="_blank">WordPress Themes Directory</a>.
+					</p>
+				</section>
+				
+				<section>
+					<h2>Managing Themes</h2>
+					<h3>Appearance > Themes</h3>
+					<p>
+						WordPress currently comes with 3 themes:  Twenty Seventeen, Twenty Sixteen and Twenty Fifteen.
+					</p>
+					<p>
+						Under <strong>Appearance > Themes</strong> is a list of all installed themes. The theme in use is labeled "Active."
+					</p>
+				</section>
+				
+				<section>
+					<h2>Themes</h2>
+					<h3>Appearance > Themes</h3>
+					<p>
+						<strong>"Live Preview" before you activate or customize a theme</strong>
+					</p>
+					<p>
+						Click "Customize" under the current theme or "Live Preview" under an available theme to see how a new or modified theme will look before you commit to it.
+					</p>
+				</section>
+				
+				<section>
+					<h2>Themes</h2>
+					<h3>Finding new themes</h3>
+					<ul>
+						<li>Searching under the "Add Themes" tab</li>
+						<li>Browsing the <a href="http://wordpress.org/themes/" target="_blank">WordPress Themes Directory</a></li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Themes</h2>
+					<h3>3 ways to install themes</h3>
+					<ul>
+						<li>Install right from the "Install Themes" tab</li>
+						<li>Download a theme zip file and install it via the "upload theme" link</li>
+						<li>Unzip the theme files and upload it via SFTP, FTP, Git, etc. to the<br /> <code>/wp-content/themes</code> folder</li>
+					</ul>
+				</section>
+<!-- Develop It -->				
+				<section>
+					<h2>Let's develop it!</h2>
+					<h3>Some tasks to get you familiar with installing, previewing and activating themes</h3>
+					<ul>
+						<li>Use the live theme previewer to see how Twenty Fourteen will look on your site and try activating it</li>
+						<li>Search for themes via the "Install Themes" tab and give one a try</li>
+						<li>Browse the <a href="http://wordpress.org/themes/" target="_blank">WordPress Themes Directory</a>, download one and install it using the "upload" link</li>
+					</ul>
+					<p>
+						<a href="http://e.ggtimer.com/10minutes" target="_blank"><strong>10 minutes</strong></a>
+					</p>
+				</section>
+
+
+<!-- End Day Two -->
+
+<!--more customizing-->				
+				<section>
+					<h2>Where to go from here?</h2>
+					<h3>Further Customizing WordPress</h3>
+
+					<p>
+						<strong>Power Users</strong> - Use theme frameworks to tweak site design.
+					</p>
+
+					<p>
+						<strong>Web Designers</strong> - Use HTML, CSS and PHP to build your own themes.
+					</p>
+				</section>
+				
+				<section>
+					<h2>Where to go from here?</h2>
+					<h3>Power users</h3>
+
+					<p>
+						<strong>Theme Frameworks</strong>
+					</p>
+
+					<ul>
+						<li><a href="http://my.studiopress.com/themes/genesis/" target="_blank"><strong>Genesis</strong></a> - The Genesis Framework empowers you to quickly and easily build incredible websites with WordPress.</li>
+						<li><a href="http://diythemes.com/" target="_blank"><strong>Thesis</strong></a> - Web design that you can customize from the comfort of your WordPress dashboard</li>
+						<li><a href="http://www.woothemes.com/" target="_blank"><strong>WooThemes Canvas</strong></a> - WordPress theme with facilities to change just about every element of the layout and style</li>
+						<li><a href="http://athemes.com/collections/best-wordpress-theme-frameworks" target="_blank"><strong>And many more!</strong></a></li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Where to go from here?</h2>	
+					<h3>Web designers</h3>
+
+					<p>
+						Folks with HTML/CSS skill set can customize or build their own WordPress themes.
+					</p>
+				</section>
+				
+				<section>
+					<h2>Resources</h2>
+					<h3>Join the Girl Develop It Philly - WordPress Group on Facebook</h3>
+
+					<p>
+						A Facebook group for Girl Develop It Philly students where members can network with each other, post questions and help each other navigate the world of WordPress.
+					</p>
+					
+					<p>
+						<a href="https://www.facebook.com/groups/gdiphillywordpress/" target="_blank">facebook.com/groups/gdiphillywordpress</a>
+					</p>
+				</section>
+				
+				<section>
+					<h2>Resources</h2>
+					<h3>Join the Philly WordPress Meetup Group</h3>
+
+					<p>
+						The Philadelphia WordPress Meetup Group is a group of WordPress enthusiasts in and around the Philadelphia area who love working with WordPress in a variety of different ways. 
+					</p>
+					
+					<p>
+						<a href="http://www.meetup.com/Philadelphia-WordPress-Meetup-Group/" target="_blank">meetup.com/Philadelphia-WordPress-Meetup-Group</a>
+					</p>
+				</section>
+				
+				<section>
+					<h2>Resources</h2>
+					<h3>Attend a WordCamp</h3>
+
+					<p>
+						WordCamps are affordable, informal, community-organized WordPress conferences held all over the world. They are packed with workshops geared toward WordPress users, designers and developers.
+					</p>
+					
+					<p>
+						<a href="http://central.wordcamp.org/" target="_blank">central.wordcamp.org</a>
+					</p>
+				</section>
+				
+				<section>
+					<h1>Questions?</h1>
+
+					<h4>One-on-one help time</h4>
+					<p>Feel free to pull me or a TA over to answer questions specific to your projects or regarding any issue not covered in class.</p>
+				</section>
+
+				
+				<section>
+					<h1>THE END</h1>
+
+					<h4>Thank you!</h4>
+					<p>And please take <a href="http://goo.gl/forms/EGHfZOuDBf" target="_blank">the GDI survey</a></p>
+				</section>
+
+			</div>
+			
+			<footer>
+				<div class="copyright">
+				  Intro to WordPress
+				  <span class="footer-nav"><a href="#/beginning-slide">Start</a></span>
+				</div>
+			</footer>						
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
