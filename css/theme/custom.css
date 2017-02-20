@@ -9,3 +9,44 @@
 .reveal h4{
 	font-family: "Gotham-Book","Helvetica",Arial,sans-serif;
 }
+.notSlides .reveal{
+	height:unset;
+	overflow: visible;
+}
+
+#staticHeader {
+	display:flex;
+	align-items: center;
+	width:75%; 
+	margin: 100px auto 0;
+}
+#staticHeader img{
+	width: 165px;
+    height: 165px;
+    padding-right:30px;
+}
+#staticHeader h1{
+	font-size: 2.5em;
+}
+#staticWrapper{
+	width:75%; 
+	margin: 50px auto;
+	font-size: .7em;
+    line-height: 1.1;
+} 
+
+#staticWrapper h3{
+	margin-bottom:0;
+}
+#staticWrapper ul{
+	padding: 10px 30px 30px;
+}
+#staticWrapper ul li{
+	padding-bottom:10px;
+}
+.indexWrapper{
+	display: flex;
+}
+.indexWrapper .half{
+	width:50%;
+}
