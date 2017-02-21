@@ -1,4 +1,5 @@
 #ignore these files
 
+*.sublime-project
 *.sublime-workspace
 *_notes/
