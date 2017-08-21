@@ -40,17 +40,33 @@
 			width:75%;
 			padding:1%;
 		}
-		.instructors .one-instructor{
+
+		.half .lessonlist{
+			width:50%;
+			float:left;
+		}
+		/*.instructors .one-instructor{*/
+		.half .one-instructor{
 		    width: 48%;
 		    float: left;
 		    padding: 0 5px 0 5px;
 		    overflow-wrap: break-word;
 		}
+		.half .one-instructor h3{
+		    font-size: 32px;
+		}
+		.half .one-instructor ul {
+		    margin-left: 0;
+		    border-left: 1px dotted #ccc;
+		}
+		.half .one-instructor ul li{
+			font-size:80%;
+		}
 		#resourceList{
 			float:none;
 			clear:both;
 			width:100%;
-		    border-top: 1px solid #ccc;
+		    /*border-top: 1px solid #ccc;*/
 		}
 		.clearfix{
 			clear:both;
@@ -68,23 +84,50 @@
 
 	<div id="staticWrapper">
 		<div class="indexWrapper">
-			<div class="links">
+			<!-- <div class="links"> -->
+			<div class="half">
 				<h2>Lessons</h2>
-				<ul >
-					<li><a target="_blank" href="continuous-slidedeck.html">Welcome & Introductions</a></li>
-					<li><a target="_blank" href="continuous-slidedeck.html#/schedule">schedule</a></li>
-					<li><a target="_blank" href="continuous-slidedeck.html#/whatIsWordPress">What is WordPress ?</a></li>
-					<li><a target="_blank" href="continuous-slidedeck.html#/installingWordPress">Installing WordPress</a></li>
-					<li><a target="_blank" href="continuous-slidedeck.html#/security1">Security Basics</a></li>
+				<ul class="lessonlist">
+					<li><a target="_blank" href="continuous-slidedeck.html">Welcome</a></li>
+					<!-- <li><a target="_blank" href="continuous-slidedeck.html#/schedule">Schedule</a></li> -->
+					<li><a target="_blank" href="continuous-slidedeck.html#/whatIsWordPress">Getting Started</a></li>
+					<!-- <li><a target="_blank" href="continuous-slidedeck.html#/installingWordPress">Installing WordPress</a></li>
+					<li><a target="_blank" href="continuous-slidedeck.html#/security1">Security Basics</a></li> -->
+					<li><a target="_blank" href="continuous-slidedeck.html#/wp-tour">Tour your site</a></li>
+					<li><a target="_blank" href="continuous-slidedeck.html#/plugins">Plugins</a></li>
+					<li><a target="_blank" href="continuous-slidedeck.html#/security">Security</a></li>
+					<li><a target="_blank" href="continuous-slidedeck.html#/site-settings">Settings and Appearance </a></li>
+					<li><a target="_blank" href="continuous-slidedeck.html#/pagedAndPosts">Pages & Posts</a></li>
+					<li><a target="_blank" href="continuous-slidedeck.html#/contentMedia">Content & Media</a></li>	
+					<li><a target="_blank" href="continuous-slidedeck.html#/menus">menus</a></li>
+					<li><a target="_blank" href="continuous-slidedeck.html#/themes">Themes</a></li>
+
+				</ul>
+				<ulclass="lessonlist">
+					<li><a target="_blank" href="continuous-slidedeck.html#/comments">Comments</a></li>
+					<li><a target="_blank" href="continuous-slidedeck.html#/users">Users</a></li>
+					<li><a target="_blank" href="continuous-slidedeck.html#/plugins2">Plugins Part 2: Shortcodes</a></li>
+					<li><a target="_blank" href="continuous-slidedeck.html#/seo">SEO</a></li>
+					<li><a target="_blank" href="continuous-slidedeck.html#/nextSteps">Next Steps</a></li>
+					<li><a target="_blank" href="continuous-slidedeck.html#/"> </a></li>
 					<li><a target="_blank" href="continuous-slidedeck.html#/"> </a></li>
 					<li><a target="_blank" href="continuous-slidedeck.html#/"> </a></li>
 					<li><a target="_blank" href="continuous-slidedeck.html#/"> </a></li>
 					<li><a target="_blank" href="continuous-slidedeck.html#/"> </a></li>
 				</ul>
-
+				<div class="clearfix"></div>
 			</div>
-			<div class="instructors">
-			<h2>Instructor Contact</h2>			
+			<!-- <div class="instructors"> -->
+			<div class="half">
+			<div id="resourceList">
+					<h2>Resources</h2>
+					<ul>
+						<li><a target="_blank" href="resources.html">Resources </a></li>
+						<li><a href="https://mywapuu.whosyourwebsite.com" target="_blank">Our site for this class</a> </li>
+						<li><a href="https://twitter.com/GDICentralVA" target="_blank">@GDICentralVA </a> </li>
+					</ul>
+				</div>
+			<h2>Instructors</h2>			
 				<div  class="one-instructor"> <!--shayna-->
 					<h3>Shayna Diamond</h3>
 					<ul >
@@ -100,19 +143,13 @@
 					</ul>
 				</div><!-- /debbie -->
 					<div class="clearfix"></div>
-				<div id="resourceList">
-					<h2>Resources</h2>
-					<ul>
-						<li><a target="_blank" href="resources.html">Resources </a></li>
-						<li><a href="https://mywapuu.whosyourwebsite.com" target="_blank">Our site for this class</a> </li>
-						<li><a href="https://twitter.com/GDICentralVA" target="_blank">@GDICentralVA </a> </li>
-					</ul>
-				</div>
+				
 			</div>
 				
 		</div><!--  /.two-thirds -->
+			<p style="font-size: .7em;">Thanks to <a href="http://thetracyl.com/">Tracy Levesque</a>, of GDI-Philly, from whom these slides were adapted.</p>
 	</div>
-	s<br/><br/><br/><p style="font-size: .7em;">Thanks to <a href="http://thetracyl.com/">Tracy Levesque</a>, of GDI-Philly, from whom these slides were adapted.</p>
+
 	</div>
 </div>
 </body>
